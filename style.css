@@ -1,0 +1,22 @@
+:root { --bg: #04121a; --panel: #071d27; --holo: #5cf2ff; --holo-dim: #28829c; --text: #e6f6fa; --dim: #9cc3cf; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.85 "Noto Sans JP", system-ui, sans-serif; }
+a { color: var(--holo); }
+header { display: flex; justify-content: space-between; align-items: center; padding: 14px 16px; border-bottom: 1px solid var(--holo-dim); }
+.brand { font-family: "DotGothic16", monospace; letter-spacing: .12em; text-decoration: none; }
+.lang { font-size: 14px; }
+main { max-width: 760px; margin: 0 auto; padding: 24px 16px 48px; }
+h1 { font-family: "DotGothic16", "Noto Sans JP", monospace; font-weight: 400; font-size: 26px; color: var(--holo); margin: 8px 0 24px; }
+h2 { font-size: 17px; margin: 28px 0 8px; padding-left: 10px; border-left: 3px solid var(--holo); }
+p, li { color: var(--dim); overflow-wrap: anywhere; }
+ol, ul { padding-left: 1.4em; }
+.doc { background: var(--panel); border: 1px solid var(--holo-dim); padding: 4px 20px 20px; clip-path: polygon(8px 0, calc(100% - 8px) 0, 100% 8px, 100% calc(100% - 8px), calc(100% - 8px) 100%, 8px 100%, 0 calc(100% - 8px), 0 8px); }
+.hero { padding: 32px 0 8px; }
+.hero h1 { font-size: 34px; letter-spacing: .12em; margin-bottom: 4px; }
+.button { display: inline-block; padding: 12px 20px; border: 1px solid var(--holo); background: rgba(92, 242, 255, .08); text-decoration: none; }
+.links { list-style: none; padding: 0; }
+.links li { border-bottom: 1px solid rgba(40, 130, 156, .5); }
+.links a { display: block; padding: 12px 4px; text-decoration: none; }
+.links a::after { content: "  ›"; }
+.note, .crumb { font-size: 14px; }
+footer { text-align: center; color: var(--holo-dim); font-size: 13px; padding: 24px 16px; }
